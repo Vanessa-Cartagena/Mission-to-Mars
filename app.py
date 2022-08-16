@@ -2,22 +2,10 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 1,
-   "id": "8dcc9629",
+   "execution_count": 2,
+   "id": "e65bad3a",
    "metadata": {},
-   "outputs": [
-    {
-     "ename": "IndentationError",
-     "evalue": "unexpected indent (scraping.py, line 16)",
-     "output_type": "error",
-     "traceback": [
-      "Traceback \u001b[0;36m(most recent call last)\u001b[0m:\n",
-      "  File \u001b[1;32m~/opt/anaconda3/lib/python3.9/site-packages/IPython/core/interactiveshell.py:3397\u001b[0m in \u001b[1;35mrun_code\u001b[0m\n    exec(code_obj, self.user_global_ns, self.user_ns)\n",
-      "\u001b[0;36m  Input \u001b[0;32mIn [1]\u001b[0;36m in \u001b[0;35m<cell line: 3>\u001b[0;36m\u001b[0m\n\u001b[0;31m    import scraping\u001b[0m\n",
-      "\u001b[0;36m  File \u001b[0;32m~/Desktop/Analysis Projects/Mission-to-Mars/scraping.py:16\u001b[0;36m\u001b[0m\n\u001b[0;31m    data = {\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mIndentationError\u001b[0m\u001b[0;31m:\u001b[0m unexpected indent\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "from flask import Flask, render_template, redirect, url_for\n",
     "from flask_pymongo import PyMongo\n",
@@ -26,8 +14,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "bb3e2f0c",
+   "execution_count": 3,
+   "id": "9796b5f7",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -36,8 +24,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "ecb20c21",
+   "execution_count": 4,
+   "id": "4786a713",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -48,8 +36,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "c9a21fbf",
+   "execution_count": 5,
+   "id": "95a94311",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -61,8 +49,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "51e52a9b",
+   "execution_count": 6,
+   "id": "b0f6a82d",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -77,9 +65,28 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "5e8f6e6e",
+   "id": "0209c0f2",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " * Serving Flask app \"__main__\" (lazy loading)\n",
+      " * Environment: production\n",
+      "\u001b[31m   WARNING: This is a development server. Do not use it in a production deployment.\u001b[0m\n",
+      "\u001b[2m   Use a production WSGI server instead.\u001b[0m\n",
+      " * Debug mode: off\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      " * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)\n"
+     ]
+    }
+   ],
    "source": [
     "if __name__ == \"__main__\":\n",
     "   app.run()"
@@ -88,7 +95,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "9a8e7e9f",
+   "id": "95b52952",
    "metadata": {},
    "outputs": [],
    "source": []
