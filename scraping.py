@@ -10,7 +10,7 @@ def scrape_all():
     executable_path = {'executable_path': ChromeDriverManager().install()}
     browser = Browser('chrome', **executable_path, headless=True)
 
-news_title, news_paragraph = mars_news(browser)
+    news_title, news_paragraph = mars_news(browser)
 
     # Run all scraping functions and store results in a dictionary
     data = {
@@ -20,7 +20,7 @@ news_title, news_paragraph = mars_news(browser)
         "facts": mars_facts(),
         "last_modified": dt.datetime.now()
     }
-
+    
     # Stop webdriver and return data
     browser.quit()
     return data
